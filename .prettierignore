@@ -1,0 +1,50 @@
+# Build
+/dist
+/build
+/coverage
+/.nyc_output
+
+# Dependências
+/node_modules
+/package-lock.json
+/pnpm-lock.yaml
+/yarn.lock
+
+# Ambiente
+.env
+.env.*
+!.env.example
+
+# Docker
+/docker-compose.yml
+/Dockerfile
+.dockerignore
+
+# Arquivos de configuração (alguns podem quebrar)
+*.config.js
+*.config.ts
+*.mjs
+*.cjs
+jest.config.*
+nest-cli.json
+tsconfig*.json
+
+# Logs
+*.log
+/logs
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.sublime-*
+
+# Documentação (opcional - depende da sua preferência)
+# *.md
+
+# Arquivos de requisição HTTP (REST Client)
+# req.http
+# *.http

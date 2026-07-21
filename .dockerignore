@@ -1,0 +1,71 @@
+# === Dependências ===
+node_modules
+npm-debug.log
+pnpm-debug.log
+
+# === Build ===
+dist
+build
+*.tsbuildinfo
+
+# === Ambiente ===
+.env
+.env.*
+!.env.example
+
+# === Versionamento ===
+.git
+.gitignore
+.gitattributes
+
+# === Docker ===
+Dockerfile
+docker-compose.yml
+docker-compose.*.yml
+.dockerignore
+
+# === Documentação ===
+*.md
+README.md
+LICENSE
+CHANGELOG.md
+
+# === IDE ===
+.vscode
+.idea
+*.sublime-*
+
+# === Sistema Operacional ===
+.DS_Store
+Thumbs.db
+
+# === Testes ===
+coverage
+.nyc_output
+test
+*.spec.ts
+*.e2e-spec.ts
+jest.config.js
+
+# === Logs ===
+logs
+*.log
+
+# === Arquivos temporários ===
+*.tmp
+*.temp
+tmp/
+.tmp/
+.temp/
+
+# === Arquivos de Requisição (opcional) ===
+# req.http
+*.http
+
+# === Outros ===
+.prettierrc
+.eslintrc*
+.eslintignore
+nest-cli.json
+tsconfig*.json
+!tsconfig.json 

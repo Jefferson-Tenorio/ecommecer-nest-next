@@ -1,0 +1,137 @@
+# EditorConfig is awesome: https://EditorConfig.org
+
+# Top-most EditorConfig file
+root = true
+
+# ============================================
+# Configurações Globais (Todos os arquivos)
+# ============================================
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = space
+indent_size = 2
+max_line_length = 120
+
+# ============================================
+# Arquivos de Configuração (JSON, YAML, etc.)
+# ============================================
+[*.{json,yml,yaml}]
+indent_size = 2
+
+# ============================================
+# TypeScript/JavaScript
+# ============================================
+[*.{js,jsx,ts,tsx,mjs,cjs}]
+indent_size = 2
+quote_type = single
+# Para NestJS, usamos single quotes (padrão do ESLint)
+# Veja: eslint.config.mjs
+
+# ============================================
+# Arquivos de Teste
+# ============================================
+[*.{spec.ts,e2e-spec.ts,test.ts}]
+indent_size = 2
+
+# ============================================
+# Arquivos de Configuração do NestJS/Node
+# ============================================
+[package.json]
+indent_size = 2
+quote_type = double  # JSON exige aspas duplas
+
+[package-lock.json]
+indent_size = 2
+# NÃO edite manualmente
+
+[pnpm-lock.yaml]
+indent_size = 2
+# NÃO edite manualmente
+
+# ============================================
+# Arquivos de Ambiente
+# ============================================
+[.env*]
+indent_size = 2
+# Sem indentação específica
+
+# ============================================
+# Docker
+# ============================================
+[Dockerfile]
+indent_size = 2
+
+[docker-compose.yml]
+indent_size = 2
+
+# ============================================
+# Documentação
+# ============================================
+[*.md]
+trim_trailing_whitespace = false
+indent_size = 2
+max_line_length = 80  # Para melhor legibilidade no README
+
+# ============================================
+# Arquivos de Shell/CLI
+# ============================================
+[*.{sh,bash,zsh}]
+indent_size = 2
+end_of_line = lf
+
+# ============================================
+# Arquivos de Requisição HTTP (REST Client)
+# ============================================
+[*.http]
+indent_size = 2
+insert_final_newline = true
+
+# ============================================
+# Arquivos de Git
+# ============================================
+[{.gitignore,.dockerignore,.editorconfig}]
+indent_size = 2
+
+# ============================================
+# Arquivos de Configuração do ESLint/Prettier
+# ============================================
+[.{eslintrc,prettierrc}*]
+indent_size = 2
+quote_type = double  # JSON
+
+# ============================================
+# Arquivos de Teste (Jest)
+# ============================================
+[jest.config.*]
+indent_size = 2
+quote_type = double
+
+# ============================================
+# Arquivos do NestJS CLI
+# ============================================
+[nest-cli.json]
+indent_size = 2
+quote_type = double
+
+# ============================================
+# Arquivos de Configuração do TypeScript
+# ============================================
+[tsconfig*.json]
+indent_size = 2
+quote_type = double
+
+# ============================================
+# Arquivos de Interface/GraphQL (se usar)
+# ============================================
+[*.{graphql,gql}]
+indent_size = 2
+
+# ============================================
+# Arquivos HTML/CSS (se usar)
+# ============================================
+[*.{html,htm,css,scss}]
+indent_size = 2
+
