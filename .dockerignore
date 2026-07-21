@@ -60,7 +60,7 @@ tmp/
 
 # === Arquivos de Requisição (opcional) ===
 # req.http
-*.http
+# *.http
 
 # === Outros ===
 .prettierrc
@@ -68,4 +68,4 @@ tmp/
 .eslintignore
 nest-cli.json
 tsconfig*.json
-!tsconfig.json 
+!tsconfig.json  # ⚠️ Mantém o tsconfig.json

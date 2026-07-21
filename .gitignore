@@ -14,6 +14,7 @@ lerna-debug.log*
 
 # OS
 .DS_Store
+Thumbs.db
 
 # Tests
 /coverage
@@ -45,6 +46,7 @@ lerna-debug.log*
 # temp directory
 .temp
 .tmp
+tmp/
 
 # Runtime data
 pids
@@ -52,5 +54,29 @@ pids
 *.seed
 *.pid.lock
 
-# Diagnostic reports (https://nodejs.org/api/report.html)
+# Diagnostic reports
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# === NOVAS ADIÇÕES PARA SEU PROJETO ===
+
+# Prisma (se for usar)
+/prisma/*.db
+/prisma/*.sqlite
+/prisma/migrations/*.sql
+!prisma/migrations/migration_lock.toml
+
+# Docker
+docker-compose.override.yml
+*.dockerignore
+
+# Arquivos de requisição (opcional - se não quiser versionar)
+# req.http
+ *.http
+
+# Arquivos de ambiente de exemplo (o .env.example você mantém)
+!.env.example
+
+# Dependências específicas
+package-lock.json
+yarn.lock
+pnpm-lock.yaml  
