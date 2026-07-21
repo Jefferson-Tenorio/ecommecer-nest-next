@@ -134,4 +134,3 @@ indent_size = 2
 # ============================================
 [*.{html,htm,css,scss}]
 indent_size = 2
-
